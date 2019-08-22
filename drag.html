@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>drag demo</title>
+    <link rel="stylesheet" href="lib/jquery-ui/jquery-ui.css">
+    <script src="lib/jquery.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <style type="text/css">
+        #draggable {
+            width: 200px;
+            height: 200px;
+            background-color: #007fff;
+        }
+    </style>
+</head>
+<body>
+<div id="draggable" class="ui-widget-content">
+    <p>请拖动我！</p>
+</div>
+<script>
+    $(function() {
+        $( "#draggable" ).draggable();
+    });
+</script>
+</body>
+</html>
